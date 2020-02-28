@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && rm -rf /var/lib/apt/lists/* \
  && apt-get autoremove -y && apt-get clean -y
 
-ENV USER idci
+ENV USER root
 ENV LOGNAME $USER
 ENV HOSTNAME $USER
 ENV HOME /home/$USER
