@@ -14,7 +14,7 @@ ENV HOSTNAME $USER
 ENV HOME /home/$USER
 ENV SHELL /bin/bash
 
-RUN useradd -d "$HOME" -s "$SHELL" -m "$USER"
+#RUN useradd -d "$HOME" -s "$SHELL" -m "$USER"
 WORKDIR $HOME
 USER $USER
 
